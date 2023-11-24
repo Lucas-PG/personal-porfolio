@@ -1,0 +1,85 @@
+.skills {
+  margin-top: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills--header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-code-header-right {
+  margin-left: 2rem;
+}
+
+.fa-code-header-left {
+  margin-right: 2rem;
+}
+
+.skills--header > h2 {
+  font-size: 70px;
+  font-weight: 600;
+}
+
+.skills--body {
+  display: flex;
+  height: 1000px;
+  width: 80%;
+  margin-top: 5rem;
+  z-index: 1;
+}
+
+.skills-body--left {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+  width: 50%;
+  z-index: 1;
+  overflow-y: auto;
+}
+
+.skills-body--description {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rem;
+  text-align: center;
+  gap: 1rem;
+}
+
+.skills-body--description > h2 {
+  font-size: 40px;
+}
+
+.skills-body--description > span {
+  font-size: 20px;
+}
+
+.skills-body--right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.skills-body--right > span {
+  font-size: 40px;
+  font-weight: 600;
+  color: #aeae9d;
+}
+
+.first-skill {
+  margin-top: 5rem;
+}
+
+.dividing-skill {
+  margin-top: 3rem;
+}

@@ -1,0 +1,17 @@
+* {
+  margin: 0rem;
+  padding: 0rem;
+  font-family: "General Sans", sans-serif;
+  overscroll-behavior-y: none;
+  overflow-x: hidden;
+  cursor: none;
+}
+
+.body {
+  width: 100vw;
+  min-width: 100vw;
+  height: 1000vh;
+  min-height: 500vh;
+  overscroll-behavior-y: none;
+  transition: 0.3s all ease-in-out;
+}

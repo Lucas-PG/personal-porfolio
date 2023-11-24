@@ -1,0 +1,106 @@
+.home {
+  height: 86vh;
+  width: 100%;
+  margin-top: 14vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.home--inner {
+  height: 86vh;
+  width: 65%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.hi-my-name-is {
+  font-size: 44px;
+}
+
+.home--text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 100;
+  margin-left: 4rem;
+  color: #f5f3ea;
+}
+
+.home--text-contaier > h2 {
+  z-index: 100;
+}
+
+.programming-cat {
+  position: absolute;
+  height: 37.5rem;
+  right: -2rem;
+  z-index: 0;
+}
+
+.projects-skills-div {
+  width: 26rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.projects-skills-btn {
+  background-color: transparent;
+  border: 1px solid #dd4343;
+  padding: 1rem 1rem;
+  color: #f5f3ea;
+  border-radius: 30px;
+  letter-spacing: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  width: 15rem;
+}
+
+.projects-skills-btn:hover {
+  background-color: #dd4343;
+}
+
+.scroll {
+  position: absolute;
+  right: 0rem;
+  bottom: 0rem;
+  transform: rotate(90deg);
+  margin-bottom: 5.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  overflow: hidden;
+  color: #f5f3ea;
+}
+
+.scroll-div {
+  height: 1px;
+  width: 4rem;
+  position: relative;
+}
+
+.animated-div {
+  position: absolute;
+  background-color: #f5f3ea;
+  height: 1px;
+  width: 1rem;
+  left: 2.9rem;
+  animation: slideRight 2s linear infinite;
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(500%); /* Move to the right side */
+  }
+}

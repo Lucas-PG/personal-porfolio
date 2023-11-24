@@ -1,0 +1,68 @@
+* {
+  margin: 0rem;
+  padding: 0rem;
+}
+
+header {
+  position: fixed;
+  top: 0rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  transition: 0.3s all ease-in-out;
+  height: 14vh;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 30px;
+  margin-left: 5rem;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.logo > span {
+  transition: all 0.2s ease-in-out, color 0s;
+  text-decoration: none;
+}
+
+.svg144 {
+  height: 20px;
+  width: 20px;
+  margin-bottom: 12px;
+}
+
+.not-showing {
+  font-size: 0px;
+  width: 0px;
+  color: #dd4343;
+}
+
+.full-name {
+  font-size: 30px;
+  width: auto;
+  color: #dd4343;
+}
+
+.header--lets-talk {
+  margin-right: 5rem;
+}
+
+.lets-talk-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  color: #f5f3ea;
+  transition: 0.2s ease-in-out all;
+  border: solid 1px #dd4343;
+  letter-spacing: 1.5px;
+}
+
+.lets-talk-btn:hover {
+  background-color: #dd4343;
+}
