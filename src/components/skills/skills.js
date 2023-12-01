@@ -35,7 +35,8 @@ const Skills = (props) => {
         </div>
         <div className="skills-body--right">
           <span className="first-skill">JavaScript</span>
-          <span>ReactJs</span>
+          <span>ReactJS</span>
+          <span>NextJS</span>
           <span>Python</span>
           <span>C</span>
           <span>NodeJS</span>

@@ -33,7 +33,7 @@ const Header = (props) => {
               handleMouseLeave();
               props.handleButtonHover(false);
             }}
-            href=""
+            href="/"
           >
             <span
               style={{

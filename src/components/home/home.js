@@ -4,11 +4,18 @@ import "./home.css";
 import programmingCat from "./images/programming-cat.png";
 
 const Home = (props) => {
-  const [projectsHovered, setProjectsHovered] = React.useState(false);
+  const [projectsBtnHovered, setProjectsBtnHovered] = React.useState(false);
   const [skillsHovered, setSkillsHovered] = React.useState(false);
 
   return (
-    <div className="home">
+    <div
+      className="home"
+      onMouseEnter={() => {
+        props.handleButtonHover(false);
+        setProjectsBtnHovered(false);
+        setSkillsHovered(false);
+      }}
+    >
       <div className="home--inner">
         <div className="home--text-container">
           <h2 className="hi-my-name-is">OLÁ, EU SOU LUCAS</h2>
@@ -36,22 +43,22 @@ const Home = (props) => {
                 className="projects-skills-btn"
                 onMouseEnter={() => {
                   props.handleButtonHover(true);
-                  setProjectsHovered(true);
+                  setProjectsBtnHovered(true);
                 }}
                 onMouseLeave={() => {
                   props.handleButtonHover(false);
-                  setProjectsHovered(false);
+                  setProjectsBtnHovered(false);
                 }}
               >
-                {projectsHovered && (
+                {projectsBtnHovered && (
                   <TypeAnimation
-                    sequence={["<>projects</>", 2000]}
+                    sequence={["<>projects</>", 0]}
                     speed={40}
                     repeat={Infinity}
                     style={{ fontSize: "14px" }}
                   />
                 )}
-                {!projectsHovered && <span>PROJETOS</span>}
+                {!projectsBtnHovered && <span>PROJETOS</span>}
               </button>
               <button
                 className="projects-skills-btn"
@@ -66,7 +73,7 @@ const Home = (props) => {
               >
                 {skillsHovered && (
                   <TypeAnimation
-                    sequence={["<>Skills</>", 2000]}
+                    sequence={["<>Skills</>", 0]}
                     speed={40}
                     repeat={Infinity}
                     style={{ fontSize: "14px" }}

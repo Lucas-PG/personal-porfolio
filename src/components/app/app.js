@@ -1,3 +1,4 @@
+import Lenis from "@studio-freight/lenis";
 import React from "react";
 import Header from "../header/header";
 import Home from "../home/home";
@@ -7,6 +8,15 @@ import Cursor from "../stickyCursor/stickyCursor";
 import "./app.css";
 
 const App = () => {
+  const lenis = new Lenis();
+
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+
+  requestAnimationFrame(raf);
+
   const [isBackgroundDark, setBackgroundDark] = React.useState(true);
   const [isBtnHovered, setIsHovered] = React.useState(false);
   const [isProjectHovered, setProjectHovered] = React.useState(false);
