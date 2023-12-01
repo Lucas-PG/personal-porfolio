@@ -7,34 +7,17 @@ import Skills from "../skills/skills";
 import Cursor from "../stickyCursor/stickyCursor";
 import "./app.css";
 
+const lenis = new Lenis();
+
 const App = () => {
-  const lenis = new Lenis();
-
-  function raf(time) {
-    lenis.raf(time);
-    requestAnimationFrame(raf);
-  }
-
-  requestAnimationFrame(raf);
-
-  const [isBackgroundDark, setBackgroundDark] = React.useState(true);
-  const [isBtnHovered, setIsHovered] = React.useState(false);
-  const [isProjectHovered, setProjectHovered] = React.useState(false);
-
-  const style = {
-    backgroundColor: isBackgroundDark ? "#0d0d0d" : "#f5f3ea",
-    position: "relative",
-  };
-
-  const handleButtonHover = (isHovered) => {
-    setIsHovered(isHovered);
-  };
-
-  const handleProjectHover = (projectHover) => {
-    setProjectHovered(projectHover);
-  };
-
   React.useEffect(() => {
+    const raf = (time) => {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    };
+
+    requestAnimationFrame(raf);
+
     const handleScroll = () => {
       const firstThreshold = window.innerHeight;
       const secondThreshold = firstThreshold + 1500;
@@ -60,6 +43,30 @@ const App = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+
+  requestAnimationFrame(raf);
+
+  const [isBackgroundDark, setBackgroundDark] = React.useState(true);
+  const [isBtnHovered, setIsHovered] = React.useState(false);
+  const [isProjectHovered, setProjectHovered] = React.useState(false);
+
+  const style = {
+    backgroundColor: isBackgroundDark ? "#0d0d0d" : "#f5f3ea",
+    position: "relative",
+  };
+
+  const handleButtonHover = (isHovered) => {
+    setIsHovered(isHovered);
+  };
+
+  const handleProjectHover = (projectHover) => {
+    setProjectHovered(projectHover);
+  };
 
   return (
     <div id="body" className="body" style={style}>
