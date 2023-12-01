@@ -28,7 +28,7 @@ const Skills = (props) => {
             <h2>As minhas ferramentas.</h2>
             <span>
               Estas são as linguagens e ferramentas que eu utilizei na maioria
-              de meus projetos. Eu estou sempre procurando aprender e aprimorar
+              dos meus projetos. Eu estou sempre procurando aprender e aprimorar
               minhas competências ainda mais.
             </span>
           </div>
